@@ -1,0 +1,16 @@
+.scrolling-item{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 20px;
+}
+
+.price{
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.initial-price{
+    color: grey;
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+.navBar{
+    color: white;
+    height: 65px;
+    display:flex;
+    align-items: center;
+    background-color: #131A22;
+    position: sticky;
+    top:0;
+    width: 100%;
+    z-index: 500;
+    @media() {
+        
+    }
+}
+.menu{
+    display: none !important;
+    margin-left: 10px;
+}
+
+.menu:hover{
+    opacity: 0.5;
+}
+
+.logo:hover, .location:hover, .signIn:hover,.orders:hover, .cart:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+.logo{
+    object-fit: contain;
+    padding: 1rem 1.5rem 0.8rem 1.5rem ;
+    height: 55%; 
+}
+
+.search{
+    height: 65%;
+    display:flex;
+    flex:1;
+    justify-content: center;
+    border-radius: 0.4rem;
+}
+
+.searchBar{
+    outline: none;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+
+.searchIcon{
+    background-color: #ff9900;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    color: rgb(64, 63, 63);
+}
+.searchIcon:hover{
+    background-color: #ba8d48;
+}
+
+.location{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1rem 0.3rem 0.3rem;
+    box-sizing: border-box;
+}
+
+.userAddress{
+    margin-left: 0.4rem;
+}
+
+.address{
+    display:block;
+    box-sizing: border-box;
+}
+
+.signIn,.orders, .cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1.4rem;
+
+}
+
+
+.txt-bold{
+    font-weight: bold;
+}
+
+.delivery{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:80%;
+    color: rgb(217, 211, 211);
+}
+
+
+@media(max-width: 922px){
+    .signIn,.orders,.location{
+        display: none;
+    }
+
+    .search{
+        margin-right: 10px;
+    }
+
+    .menu{
+        display: block !important;
+    }
+  
+}
+
+
+
+/* .logo{
+    flex:1;
+    padding: 1rem ;
+}
+.location{
+    flex:3;
+}
+.search{
+    flex:8;
+}
+
+.account{
+    flex:8;
+} */
