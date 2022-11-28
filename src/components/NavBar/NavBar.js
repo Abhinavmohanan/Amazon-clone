@@ -9,7 +9,6 @@ import { useStatevalue } from '../../StateProvider';
 import MenuIcon from '@mui/icons-material/Menu';
 import { slide as Menu } from 'react-burger-menu'
 import { SideBar } from './SideBar';
-import { useDetectClickOutside } from 'react-detect-click-outside';
 
 
 
@@ -29,7 +28,6 @@ export const NavBar = () => {
     }
   }
 
-  const ref = useDetectClickOutside({onTriggered: onSideBar})
 
   const applyStyle = () => {
     setStyle({
@@ -61,7 +59,7 @@ export const NavBar = () => {
   return (
     <>
       <div className='navBar'>
-        <MenuIcon className='menu' onClick={onSideBar} ref={ref}/>
+        <MenuIcon className='menu' onClick={onSideBar}/>
         <img src={logo} alt='Amazong Logo' className='logo' onClick={()=>{navigate("/");}}></img>
         <div className='location'>
           <LocationOnIcon />
